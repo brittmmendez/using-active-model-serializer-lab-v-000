@@ -2088,3 +2088,47 @@ Processing by ProductsController#index as HTML
   [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
   Rendered products/index.html.erb within layouts/application (54.1ms)
 Completed 200 OK in 73ms (Views: 72.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 69.133.193.210 at 2018-04-12 14:34:18 +0000
+Cannot render console from 69.133.193.210! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/21.json" for 69.133.193.210 at 2018-04-12 14:34:21 +0000
+Cannot render console from 69.133.193.210! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"21"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.56ms)
+Completed 200 OK in 126ms (Views: 29.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/22.json" for 69.133.193.210 at 2018-04-12 14:35:36 +0000
+Cannot render console from 69.133.193.210! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"22"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 22]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 200 OK in 15ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/23.json" for 69.133.193.210 at 2018-04-12 14:35:37 +0000
+Cannot render console from 69.133.193.210! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"23"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 23]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/24.json" for 69.133.193.210 at 2018-04-12 14:35:39 +0000
+Cannot render console from 69.133.193.210! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"24"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 24]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.1ms)
