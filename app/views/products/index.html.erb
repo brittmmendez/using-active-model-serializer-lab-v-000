@@ -8,6 +8,7 @@
 <script type="text/javascript" charset="utf-8">
 $(function() {
   $(".js-more").on("click", function() {
+    console.log("hello")
     var id = $(this).data("id");
     $.get("/products/" + id + ".json", function(data) {
       var inventoryText = "<strong>Available</strong>";
